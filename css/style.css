@@ -1,10 +1,5 @@
-html {
-    background-color:rgb(138, 250, 181)
-}
-
 h1,
 h2 {
-    background-color:rgb(224, 221, 221);
     color: rgb(17, 133, 133);
     text-align: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -12,43 +7,41 @@ h2 {
     font-size: 50px;
 }
 
+.body {
+    margin: 0;
+    background: #eee;
+}
+
+
+#babushka {
+    height: auto;
+    width:600px;
+    object-position: center;
+    margin-bottom: 50px;
+}
+
+.centered {
+    position: absolute;    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    font-size: 100px;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+.bgimage.centered {
+    opacity: 1;
+}
+
 .container{
-    flex: auto;
-    padding: 8px;
-    display: flex;
-    padding: 16px;
-    border: 18px double indigo;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.item {
     flex: 1;
-}
-
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-}
-
-button {
-    color: indigo;
-    background-color: inherit;
-    font-size: 20px;
-    margin: 10px;
-}
-
-.navigation {
     display: flex;
-    justify-content: space-around;
+    padding: 4px;
+    border: 4px double rgb(17, 133, 133);
+    justify-content: center;
+    margin: 20px;
 }
-
-.line {
-    color: red;
-}
-
 
 p,
 li {
@@ -56,16 +49,19 @@ li {
     padding: 8px;
 }
 
-#babushka {
-    height: auto;
-    width:400px;
-    object-position: center;
-    margin-bottom: 50px;
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.list {
+.list-home {
+    list-style:disc;
+}
+
+#list {
     background-color: white;
-    color: crimson;
+    color: rgb(17, 133, 133);
     font-family: 'Courier New', Courier, monospace, sans-serif ;
     font-size: 22px;
 }
@@ -73,4 +69,59 @@ li {
 
 #return {
     font-size: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
+
+
+.navigation {
+    background: white;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 0 8px rgba(0,0,0,.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.profile-image {
+    background: url(/images/AdobeStock_178470772-1024x700.jpeg);
+    box-shadow: inset 2px 2px 4px rgba(0,0,0.5);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+.logo {
+    color: rgb(17, 133, 133);
+    font-size: 32px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    background: rgb(17, 133, 133);
+    color: white;
+    padding: 8px 24px;
+    flex: 0 0 auto;
+}
+
+.clicks {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+  }
+
+  .left, .right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  a {
+    text-decoration: none;
+  }
